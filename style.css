@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primary-color: rgb(0, 71, 75);
+    --body-background: rgb(197, 228, 231);
+    --input-background: rgb(212, 231, 241);
+    --active-btn-border: rgb(130, 220, 230);
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--body-background);
+    height: 100vh;
+    color: rgb(103, 124, 125);
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 800px;
+    border: 1px solid black;
+}
+
+.contain {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid black;
+}
+
+.container-right {}
+
+.amount {
+    width: 85%;
+}
+
+.tip-select {
+    margin-left: 25px;
+}
+
+.tip-select>button {
+    margin: 5px;
+}
+
+button {
+    background: var(--primary-color);
+    padding: 0.7rem 2rem;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: rgb(159, 232, 223);
+    color: var(--primary-color);
+}
+
+input {
+    outline: var(--active-btn-border);
+    border: none;
+    color: rgb(11, 61, 61);
+    background-color: rgb(223, 242, 243);
+    border-radius: 5px;
+    text-align: end;
+    font-size: 30px;
+}
+
+input:focus {
+    outline: auto;
+    outline-width: 5px;
+    outline-color: var(--active-btn-border);
+}
+
+.amount-input {
+    width: 100%;
+    height: 47.5px;
+}
+
+.amount-input::placeholder {
+    font-size: 30px;
+    padding: 5px;
+}
+
+.input-tip {
+    width: 108px;
+    height: 46px;
+    margin: 5px;
+}
+
+.con {
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    justify-content: space-evenly;
+}
+
+.container-right>div {
+    background-color: var(--primary-color);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.g {
+    display: flex;
+    flex-direction: column;
+}
